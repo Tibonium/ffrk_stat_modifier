@@ -15,6 +15,9 @@ TEMPLATE = app
 SOURCES += main.cpp\
         ffrk_stat_mod.cpp
 
-HEADERS  += ffrk_stat_mod.h
+HEADERS  += ffrk_stat_mod.h \
+    StatModArray.h \
+    StatModifiers.h \
+    Status.h
 
 FORMS    += ffrk_stat_mod.ui

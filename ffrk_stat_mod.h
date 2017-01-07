@@ -2,6 +2,7 @@
 #define FFRK_STAT_MOD_H
 
 #include <QWidget>
+#include "StatModArray.h"
 
 namespace Ui {
 class ffrk_stat_mod;
@@ -17,6 +18,15 @@ public:
 
 private:
     Ui::ffrk_stat_mod *ui;
+
+    double getMagicModifier(const StatModArray* poStatMods);
+    double getAttackModifier(const StatModArray* poStatMods);
+    double getDefenseModifier(const StatModArray* poStatMods);
+
+    double getAtkfromDefConversion(const StatModArray* poStatMods);
+    double getAtkfromCurrentHP();
+
+    double getAttentuation(const StatModArray* poStatMods);
 };
 
 #endif // FFRK_STAT_MOD_H
